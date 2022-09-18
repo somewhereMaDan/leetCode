@@ -22,4 +22,5 @@ Node* deleteDuplicate(Node* head){
     }
   }
   return head;
+  // we're are returning head and not temp because temp now has the address of the last node and head have the address of starting node of the list
 };
