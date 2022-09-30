@@ -7,7 +7,6 @@ int minSum(vector<int> num, int k)
   while (k > 0)
   {
     sort(num.begin(), num.end(), greater <>());
-
     // priority_queue<int> pq;
     // int n = num.size();
     // for (int i = 0; i < n; i++)
@@ -21,7 +20,7 @@ int minSum(vector<int> num, int k)
     //   pq.pop();
     //   n--;
     // }
-    
+
     int get = abs(num.front() / 2);
     num.front() = get;
     k--;
