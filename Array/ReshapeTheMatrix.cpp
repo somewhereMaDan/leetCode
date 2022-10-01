@@ -30,5 +30,4 @@ vector<vector<int>> matrixReshape(vector<vector<int>>& mat, int r, int c){
   return newMat;
   // Time complexity - O(r*c)
   // Space complexity - O(r*c) + O(rows*cols),... O(rows*cols) this was the array we created to copy values from it
-
 }
