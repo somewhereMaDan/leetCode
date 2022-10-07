@@ -7,6 +7,7 @@ struct Node{
   Node* right;
 };
 
+
 int util(Node* root){
   if(root == NULL) return 0;
 
