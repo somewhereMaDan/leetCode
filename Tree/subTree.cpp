@@ -80,23 +80,26 @@ int main(int argc, char const *argv[])
   return 0;
 }
 
-// bool utilCheck(Node* root, int level){
-//         if(root == NULL) return true;
+// bool sameTree(TreeNode* root1, TreeNode* root2){
+//         if(root1 == NULL && root2 == NULL) return true;
+//         if((root1 == NULL || root2 == NULL) || (root1->val != root2->val)) return false;
         
-//         if(root->left == NULL && root->right == NULL){
-//             if(stLvl == 0){
-//                 stLvl = level; // we would update the height of the leaf node which we have visited first
-//                 return true;
-//             }
-//             return stLvl == level; // we would check if the height of first visited leaf node is equal to others
-//             // this statement will return true if it's stLvl == Level
-//         }
-        
-//         return utilCheck(root->left, level + 1) && (root->right, level + 1); 
-//         // if they both return true, this fucntion will return true 
+//         return sameTree(root1->left, root2->left) && sameTree(root1->right, root2->right);
 //     }
     
-//     bool check(Node *root)
-//     {
-//         utilCheck(root,1) != false;
+//     bool check(TreeNode* root, TreeNode* subRoot){
+//         if(root == NULL) return false;
+//         else if(sameTree(root,subRoot)) return true;
+//         else{
+//             return (check(root->left, subRoot) || check(root->right, subRoot));
+// //             OR operator first check if either of the arguments is true and false otherwise.
+//         }
+//     }
+    
+//     bool isSubtree(TreeNode* root, TreeNode* subRoot) {
+//         if(check(root, subRoot) == true){
+//             return true;
+//         }else{
+//             return false;
+//         }
 //     }

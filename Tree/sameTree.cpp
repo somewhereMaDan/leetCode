@@ -8,8 +8,11 @@ struct Node{
 };
 
 bool isSameTree(Node* p, Node* q) {
-  if(p == NULL && q == NULL) return true;
-  if((p != NULL || q != NULL) || (p->val != q->val)) return false;
+  Node* h1 = p;
+  Node* h2 = q;
 
-  return (isSameTree(p->left,q->left) && isSameTree(p->right,q->right));
+  if(h1 == NULL && h2 == NULL) return true;
+  if((h1 == NULL || h2 == NULL) || (h1->val != h2->val)) return false;
+
+  return isSameTree(h1->left,h2->left) && isSameTree(h1->right,h2->right);
 }

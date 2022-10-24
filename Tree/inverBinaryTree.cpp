@@ -17,6 +17,15 @@ Node* invert(Node* root){
   return root;
 }
 
+// if(root == NULL) return root;
+        // invertTree(root->left);
+        // TreeNode* cont = root->left;
+        // invertTree(root->right);
+        // root->left = root->right;
+        // root->right = cont;
+        
+        // return root;
+
 // if(!root) return {}; // empty vector
 //         vector<vector<int>> result;
         
