@@ -60,5 +60,4 @@ Node* mergeTwoList(Node* head1, Node* head2){
   return dummy->next; 
   // we didn't assign any data to dummy so it'll store 0 or any garbage value
   // also we need the value from the next of the dummy node, beacuse from there the list will get started
-   
 }
